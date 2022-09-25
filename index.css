@@ -53,10 +53,13 @@ body {
     margin: 0 auto;
 }
 
+section {
+    padding: 6rem 0;
+}
+
 section h2 {
     text-align: center;
-    margin-bottom: 4rem;
-
+    margin-bottom: 5rem;
 }
 
 h1,
@@ -277,24 +280,23 @@ header {
 
 /* =============== COURSE START ===============*/
 .courses {
-    margin-top: 10rem;
+    background-color: var(--color-bg2)
 }
 
 .courses_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
 }
 
 .course {
     background: var(--color-bg3);
     text-align: center;
     border: 1px solid transparent;
-}
-
-.course {
     background: transparent;
 }
+
 
 .course__info {
     padding: 2rem;
@@ -306,3 +308,64 @@ header {
 }
 
 /* =============== COURSE END ===============*/
+
+
+/* =============== FAQs START ===============*/
+
+.faqs {
+    background: var(--color-bg);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq_icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/* =============== FAQs END ===============*/
+
+/* =============== TESTIMONILAS START ===============*/
+.testimonial__conatainer {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding: 2rem;
+}
+
+.avatar {
+    width: 3rem;
+    border-radius: 2rem;
+
+
+}
+
+/* =============== TESTIMONILAS END ===============*/
