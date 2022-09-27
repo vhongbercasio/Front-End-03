@@ -23,3 +23,27 @@ faqsEL.forEach(faq => {
         }
     })
 })
+
+// Show/hide nav menu 
+
+const menu = document.querySelector(".nav__menu");
+const menuBtnOpenEL = document.querySelector("#open-menu-btn");
+const menuBtnCloseEL = document.querySelector("#close-menu-btn");
+
+
+// Open nav menu
+menuBtnOpenEL.addEventListener("click", () => {
+    menu.style.display = "flex";
+    menuBtnCloseEL.style.display = "inline-block";
+    menuBtnOpenEL.style.display = "none";
+})
+
+// Close nav menu arrow function
+const closeNav = () => {
+    menu.style.display = "none";
+    menuBtnCloseEL.style.display = "none";
+    menuBtnOpenEL.style.display = "inline-block";
+
+}
+// call the call back function which is closeNav
+menuBtnCloseEL.addEventListener("click", closeNav)
